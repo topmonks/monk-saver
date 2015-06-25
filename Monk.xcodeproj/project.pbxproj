@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0254DF1B3AFF71003136F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0254DE1B3AFF71003136F4 /* MainView.swift */; };
+		BF0254ED1B3B16AB003136F4 /* monk0.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E51B3B16AA003136F4 /* monk0.png */; };
+		BF0254EE1B3B16AB003136F4 /* monk0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E61B3B16AA003136F4 /* monk0@2x.png */; };
+		BF0254EF1B3B16AB003136F4 /* monk1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E71B3B16AA003136F4 /* monk1.png */; };
+		BF0254F01B3B16AB003136F4 /* monk1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E81B3B16AB003136F4 /* monk1@2x.png */; };
+		BF0254F11B3B16AB003136F4 /* monk2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E91B3B16AB003136F4 /* monk2.png */; };
+		BF0254F21B3B16AB003136F4 /* monk2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EA1B3B16AB003136F4 /* monk2@2x.png */; };
+		BF0254F31B3B16AB003136F4 /* monk3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EB1B3B16AB003136F4 /* monk3.png */; };
+		BF0254F41B3B16AB003136F4 /* monk3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EC1B3B16AB003136F4 /* monk3@2x.png */; };
+		BF0254F81B3B178D003136F4 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254F61B3B178D003136F4 /* thumbnail@2x.png */; };
+		BF0254FB1B3B18A3003136F4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0254FA1B3B18A3003136F4 /* Preferences.xib */; };
+		BF0254FD1B3B18D3003136F4 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */; };
+		BF1D80A51B3BD21E005982F6 /* MonkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A41B3BD21E005982F6 /* MonkView.swift */; };
+		BF1D80A71B3BD254005982F6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A61B3BD254005982F6 /* Renderer.swift */; };
+		BF1D80AB1B3BD68E005982F6 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80AA1B3BD68E005982F6 /* Animator.swift */; };
+		BF1D80AD1B3BDD66005982F6 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80AC1B3BDD66005982F6 /* Scene.swift */; };
+		BF39364B1B3D922300883E5C /* ImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39364A1B3D922300883E5C /* ImageNode.swift */; };
+		BF9E647E1B3C23020069E8F0 /* MonkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E647D1B3C23020069E8F0 /* MonkSettings.swift */; };
+		BFAAF78E1B3B3F3400A99983 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = BFAAF78D1B3B3F3400A99983 /* thumbnail.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF0254D11B3AFF31003136F4 /* Monk.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Monk.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0254D81B3AFF31003136F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0254DE1B3AFF71003136F4 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BF0254E51B3B16AA003136F4 /* monk0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monk0.png; sourceTree = "<group>"; };
+		BF0254E61B3B16AA003136F4 /* monk0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monk0@2x.png"; sourceTree = "<group>"; };
+		BF0254E71B3B16AA003136F4 /* monk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monk1.png; sourceTree = "<group>"; };
+		BF0254E81B3B16AB003136F4 /* monk1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monk1@2x.png"; sourceTree = "<group>"; };
+		BF0254E91B3B16AB003136F4 /* monk2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monk2.png; sourceTree = "<group>"; };
+		BF0254EA1B3B16AB003136F4 /* monk2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monk2@2x.png"; sourceTree = "<group>"; };
+		BF0254EB1B3B16AB003136F4 /* monk3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monk3.png; sourceTree = "<group>"; };
+		BF0254EC1B3B16AB003136F4 /* monk3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monk3@2x.png"; sourceTree = "<group>"; };
+		BF0254F61B3B178D003136F4 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		BF0254FA1B3B18A3003136F4 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		BF1D80A41B3BD21E005982F6 /* MonkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkView.swift; sourceTree = "<group>"; };
+		BF1D80A61B3BD254005982F6 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		BF1D80AA1B3BD68E005982F6 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		BF1D80AC1B3BDD66005982F6 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		BF39364A1B3D922300883E5C /* ImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNode.swift; sourceTree = "<group>"; };
+		BF9E647D1B3C23020069E8F0 /* MonkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkSettings.swift; sourceTree = "<group>"; };
+		BFAAF78D1B3B3F3400A99983 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0254CD1B3AFF31003136F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0254C71B3AFF31003136F4 = {
+			isa = PBXGroup;
+			children = (
+				BF0254D31B3AFF31003136F4 /* Monk */,
+				BF0254D21B3AFF31003136F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0254D21B3AFF31003136F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0254D11B3AFF31003136F4 /* Monk.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0254D31B3AFF31003136F4 /* Monk */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D80A11B3BD1CE005982F6 /* Content */,
+				BF0254E41B3B1674003136F4 /* Resources */,
+				BF0254F91B3B1888003136F4 /* Preferences */,
+				BF0254DE1B3AFF71003136F4 /* MainView.swift */,
+				BF0254D81B3AFF31003136F4 /* Info.plist */,
+			);
+			path = Monk;
+			sourceTree = "<group>";
+		};
+		BF0254E41B3B1674003136F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFAAF78D1B3B3F3400A99983 /* thumbnail.png */,
+				BF0254F61B3B178D003136F4 /* thumbnail@2x.png */,
+				BF0254E51B3B16AA003136F4 /* monk0.png */,
+				BF0254E61B3B16AA003136F4 /* monk0@2x.png */,
+				BF0254E71B3B16AA003136F4 /* monk1.png */,
+				BF0254E81B3B16AB003136F4 /* monk1@2x.png */,
+				BF0254E91B3B16AB003136F4 /* monk2.png */,
+				BF0254EA1B3B16AB003136F4 /* monk2@2x.png */,
+				BF0254EB1B3B16AB003136F4 /* monk3.png */,
+				BF0254EC1B3B16AB003136F4 /* monk3@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BF0254F91B3B1888003136F4 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				BF0254FA1B3B18A3003136F4 /* Preferences.xib */,
+				BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		BF1D80A11B3BD1CE005982F6 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D80A61B3BD254005982F6 /* Renderer.swift */,
+				BF1D80AA1B3BD68E005982F6 /* Animator.swift */,
+				BF1D80AC1B3BDD66005982F6 /* Scene.swift */,
+				BF39364A1B3D922300883E5C /* ImageNode.swift */,
+				BF1D80A41B3BD21E005982F6 /* MonkView.swift */,
+				BF9E647D1B3C23020069E8F0 /* MonkSettings.swift */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF0254CE1B3AFF31003136F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF0254D01B3AFF31003136F4 /* Monk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0254DB1B3AFF31003136F4 /* Build configuration list for PBXNativeTarget "Monk" */;
+			buildPhases = (
+				BF0254CC1B3AFF31003136F4 /* Sources */,
+				BF0254CD1B3AFF31003136F4 /* Frameworks */,
+				BF0254CE1B3AFF31003136F4 /* Headers */,
+				BF0254CF1B3AFF31003136F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Monk;
+			productName = Monk;
+			productReference = BF0254D11B3AFF31003136F4 /* Monk.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0254C81B3AFF31003136F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "TopMonks, s.r.o.";
+				TargetAttributes = {
+					BF0254D01B3AFF31003136F4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = BF0254CB1B3AFF31003136F4 /* Build configuration list for PBXProject "Monk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF0254C71B3AFF31003136F4;
+			productRefGroup = BF0254D21B3AFF31003136F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0254D01B3AFF31003136F4 /* Monk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0254CF1B3AFF31003136F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0254F31B3B16AB003136F4 /* monk3.png in Resources */,
+				BF0254EE1B3B16AB003136F4 /* monk0@2x.png in Resources */,
+				BFAAF78E1B3B3F3400A99983 /* thumbnail.png in Resources */,
+				BF0254F81B3B178D003136F4 /* thumbnail@2x.png in Resources */,
+				BF0254F11B3B16AB003136F4 /* monk2.png in Resources */,
+				BF0254F21B3B16AB003136F4 /* monk2@2x.png in Resources */,
+				BF0254EF1B3B16AB003136F4 /* monk1.png in Resources */,
+				BF0254FB1B3B18A3003136F4 /* Preferences.xib in Resources */,
+				BF0254F41B3B16AB003136F4 /* monk3@2x.png in Resources */,
+				BF0254ED1B3B16AB003136F4 /* monk0.png in Resources */,
+				BF0254F01B3B16AB003136F4 /* monk1@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0254CC1B3AFF31003136F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9E647E1B3C23020069E8F0 /* MonkSettings.swift in Sources */,
+				BF1D80A51B3BD21E005982F6 /* MonkView.swift in Sources */,
+				BF0254FD1B3B18D3003136F4 /* PreferencesWindowController.swift in Sources */,
+				BF0254DF1B3AFF71003136F4 /* MainView.swift in Sources */,
+				BF39364B1B3D922300883E5C /* ImageNode.swift in Sources */,
+				BF1D80AD1B3BDD66005982F6 /* Scene.swift in Sources */,
+				BF1D80AB1B3BD68E005982F6 /* Animator.swift in Sources */,
+				BF1D80A71B3BD254005982F6 /* Renderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF0254D91B3AFF31003136F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF0254DA1B3AFF31003136F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BF0254DC1B3AFF31003136F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Monk/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topmonks.apps.Monk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		BF0254DD1B3AFF31003136F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Monk/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topmonks.apps.Monk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0254CB1B3AFF31003136F4 /* Build configuration list for PBXProject "Monk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0254D91B3AFF31003136F4 /* Debug */,
+				BF0254DA1B3AFF31003136F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0254DB1B3AFF31003136F4 /* Build configuration list for PBXNativeTarget "Monk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0254DC1B3AFF31003136F4 /* Debug */,
+				BF0254DD1B3AFF31003136F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0254C81B3AFF31003136F4 /* Project object */;
+}
