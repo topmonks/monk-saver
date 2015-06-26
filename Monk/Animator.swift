@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Animatable: Drawable {
+protocol Animatable {
   var origin: NSPoint { get set }
   var size: NSSize { get }
   var direction: NSPoint { get set }

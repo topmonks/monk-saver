@@ -2,11 +2,11 @@ Simple OS X screen saver.
 
 ## Why
 
-Because I can and I wanted to try write one. Just to learn `ScreenSaver*`.
+Because I can and I wanted to try to write one. Just to learn `ScreenSaver*`.
 
 > Learn or die. Teach or die. Only learning and teaching brains flourish.
 
-One of the [TopMonks](http://www.topmonks.com) company values.
+[TopMonks](http://www.topmonks.com) company [value](http://www.topmonks.com/company-values/).
 
 ## Requirements
 
@@ -32,7 +32,3 @@ Follow TopMonks on Twitter ([@topmonks](https://twitter.com/topmonks))
 ## License
 
 Screen saver code is released under the MIT license. See LICENSE for details.
-
-Monk logos (Content) contained in this project is owned by TopMonks, s.r.o. No Content may be copied,
-reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or
-distributed in any way.
