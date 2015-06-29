@@ -100,10 +100,18 @@ extension MonkSettings {
     let bounds = NSMakeRect(0, 0, Scene.DefaultWidth, Scene.DefaultHeight)
     var monkImageIndex = self.initialMonkImageIndex(self.type)
     
+    let images: [NSImage] = {
+      let images = (0..<NumberOfMonkLogos).map({ bundle.URLForResource("logo\($0)", withExtension: "png") })
+        .filter({ $0 != nil })
+        .map({ NSImage(contentsOfURL: $0!) })
+        .filter({ $0 != nil })
+        .map({ $0! })
+      
+      return images
+      }()
+    
     for _ in 0..<count {
-      guard let image = bundle.imageForResource("monk\(monkImageIndex)") else {
-        continue
-      }
+      let image = images[monkImageIndex]
       
       let origin = self.generateRandomNodeOrigin(image.size, bounds: bounds)
       let direction = self.generateRandomNodeDirection()
