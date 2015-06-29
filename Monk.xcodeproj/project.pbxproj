@@ -19,6 +19,26 @@
 		BF0254F81B3B178D003136F4 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254F61B3B178D003136F4 /* thumbnail@2x.png */; };
 		BF0254FB1B3B18A3003136F4 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0254FA1B3B18A3003136F4 /* Preferences.xib */; };
 		BF0254FD1B3B18D3003136F4 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */; };
+		BF1329261B41474F001E6C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1329251B41474F001E6C40 /* AppDelegate.swift */; };
+		BF13292D1B41474F001E6C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF13292B1B41474F001E6C40 /* Main.storyboard */; };
+		BF1329321B41479B001E6C40 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A61B3BD254005982F6 /* Renderer.swift */; };
+		BF1329331B41479B001E6C40 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80AA1B3BD68E005982F6 /* Animator.swift */; };
+		BF1329341B41479B001E6C40 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80AC1B3BDD66005982F6 /* Scene.swift */; };
+		BF1329351B41479B001E6C40 /* ImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39364A1B3D922300883E5C /* ImageNode.swift */; };
+		BF1329361B41479B001E6C40 /* MonkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A41B3BD21E005982F6 /* MonkView.swift */; };
+		BF1329371B41479B001E6C40 /* MonkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E647D1B3C23020069E8F0 /* MonkSettings.swift */; };
+		BF1329381B41479B001E6C40 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0254FA1B3B18A3003136F4 /* Preferences.xib */; };
+		BF1329391B41479B001E6C40 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */; };
+		BF13293A1B41479B001E6C40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0254DE1B3AFF71003136F4 /* MainView.swift */; };
+		BF13293B1B4147A1001E6C40 /* monk0.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E51B3B16AA003136F4 /* monk0.png */; };
+		BF13293C1B4147A1001E6C40 /* monk0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E61B3B16AA003136F4 /* monk0@2x.png */; };
+		BF13293D1B4147A1001E6C40 /* monk1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E71B3B16AA003136F4 /* monk1.png */; };
+		BF13293E1B4147A1001E6C40 /* monk1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E81B3B16AB003136F4 /* monk1@2x.png */; };
+		BF13293F1B4147A1001E6C40 /* monk2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254E91B3B16AB003136F4 /* monk2.png */; };
+		BF1329401B4147A1001E6C40 /* monk2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EA1B3B16AB003136F4 /* monk2@2x.png */; };
+		BF1329411B4147A1001E6C40 /* monk3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EB1B3B16AB003136F4 /* monk3.png */; };
+		BF1329421B4147A1001E6C40 /* monk3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0254EC1B3B16AB003136F4 /* monk3@2x.png */; };
+		BF1329491B415335001E6C40 /* DemoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1329481B415335001E6C40 /* DemoMainView.swift */; };
 		BF1D80A51B3BD21E005982F6 /* MonkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A41B3BD21E005982F6 /* MonkView.swift */; };
 		BF1D80A71B3BD254005982F6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80A61B3BD254005982F6 /* Renderer.swift */; };
 		BF1D80AB1B3BD68E005982F6 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D80AA1B3BD68E005982F6 /* Animator.swift */; };
@@ -43,6 +63,11 @@
 		BF0254F61B3B178D003136F4 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		BF0254FA1B3B18A3003136F4 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		BF1329231B41474F001E6C40 /* Monk Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monk Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1329251B41474F001E6C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF13292C1B41474F001E6C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF13292E1B41474F001E6C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1329481B415335001E6C40 /* DemoMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoMainView.swift; sourceTree = "<group>"; };
 		BF1D80A41B3BD21E005982F6 /* MonkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkView.swift; sourceTree = "<group>"; };
 		BF1D80A61B3BD254005982F6 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		BF1D80AA1B3BD68E005982F6 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
@@ -60,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1329201B41474F001E6C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0254D31B3AFF31003136F4 /* Monk */,
+				BF1329241B41474F001E6C40 /* Monk Demo */,
 				BF0254D21B3AFF31003136F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0254D11B3AFF31003136F4 /* Monk.saver */,
+				BF1329231B41474F001E6C40 /* Monk Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +149,17 @@
 				BF0254FC1B3B18D3003136F4 /* PreferencesWindowController.swift */,
 			);
 			name = Preferences;
+			sourceTree = "<group>";
+		};
+		BF1329241B41474F001E6C40 /* Monk Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BF1329251B41474F001E6C40 /* AppDelegate.swift */,
+				BF1329481B415335001E6C40 /* DemoMainView.swift */,
+				BF13292B1B41474F001E6C40 /* Main.storyboard */,
+				BF13292E1B41474F001E6C40 /* Info.plist */,
+			);
+			path = "Monk Demo";
 			sourceTree = "<group>";
 		};
 		BF1D80A11B3BD1CE005982F6 /* Content */ = {
@@ -161,6 +206,23 @@
 			productReference = BF0254D11B3AFF31003136F4 /* Monk.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		BF1329221B41474F001E6C40 /* Monk Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1329311B41474F001E6C40 /* Build configuration list for PBXNativeTarget "Monk Demo" */;
+			buildPhases = (
+				BF13291F1B41474F001E6C40 /* Sources */,
+				BF1329201B41474F001E6C40 /* Frameworks */,
+				BF1329211B41474F001E6C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Monk Demo";
+			productName = "Monk Demo";
+			productReference = BF1329231B41474F001E6C40 /* Monk Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +236,9 @@
 					BF0254D01B3AFF31003136F4 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					BF1329221B41474F001E6C40 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = BF0254CB1B3AFF31003136F4 /* Build configuration list for PBXProject "Monk" */;
@@ -182,6 +247,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BF0254C71B3AFF31003136F4;
 			productRefGroup = BF0254D21B3AFF31003136F4 /* Products */;
@@ -189,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				BF0254D01B3AFF31003136F4 /* Monk */,
+				BF1329221B41474F001E6C40 /* Monk Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +279,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1329211B41474F001E6C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1329401B4147A1001E6C40 /* monk2@2x.png in Resources */,
+				BF13293D1B4147A1001E6C40 /* monk1.png in Resources */,
+				BF1329411B4147A1001E6C40 /* monk3.png in Resources */,
+				BF1329381B41479B001E6C40 /* Preferences.xib in Resources */,
+				BF13292D1B41474F001E6C40 /* Main.storyboard in Resources */,
+				BF13293F1B4147A1001E6C40 /* monk2.png in Resources */,
+				BF13293C1B4147A1001E6C40 /* monk0@2x.png in Resources */,
+				BF1329421B4147A1001E6C40 /* monk3@2x.png in Resources */,
+				BF13293B1B4147A1001E6C40 /* monk0.png in Resources */,
+				BF13293E1B4147A1001E6C40 /* monk1@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,7 +314,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF13291F1B41474F001E6C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1329371B41479B001E6C40 /* MonkSettings.swift in Sources */,
+				BF13293A1B41479B001E6C40 /* MainView.swift in Sources */,
+				BF1329491B415335001E6C40 /* DemoMainView.swift in Sources */,
+				BF1329341B41479B001E6C40 /* Scene.swift in Sources */,
+				BF1329351B41479B001E6C40 /* ImageNode.swift in Sources */,
+				BF1329331B41479B001E6C40 /* Animator.swift in Sources */,
+				BF1329321B41479B001E6C40 /* Renderer.swift in Sources */,
+				BF1329261B41474F001E6C40 /* AppDelegate.swift in Sources */,
+				BF1329391B41479B001E6C40 /* PreferencesWindowController.swift in Sources */,
+				BF1329361B41479B001E6C40 /* MonkView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF13292B1B41474F001E6C40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF13292C1B41474F001E6C40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BF0254D91B3AFF31003136F4 /* Debug */ = {
@@ -341,6 +453,33 @@
 			};
 			name = Release;
 		};
+		BF13292F1B41474F001E6C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Monk Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.topmonks.apps.Monk-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF1329301B41474F001E6C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Monk Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.topmonks.apps.Monk-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -361,6 +500,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BF1329311B41474F001E6C40 /* Build configuration list for PBXNativeTarget "Monk Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF13292F1B41474F001E6C40 /* Debug */,
+				BF1329301B41474F001E6C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,12 @@
 import Foundation
 import Cocoa
 
+func calculateScale(forFrame frame: NSRect) -> CGFloat {
+  let horizontalScale = frame.size.width / Scene.DefaultWidth
+  let verticalScale = frame.size.height / Scene.DefaultHeight
+  return min(horizontalScale, verticalScale)
+}
+
 class MonkView: NSView {
   private var scale: CGFloat = 1.0 {
     didSet {
@@ -19,7 +25,7 @@ class MonkView: NSView {
   override var frame: NSRect {
     didSet {
       self.scene?.bounds = self.sceneBounds()
-      self.scale = self.frame.size.width / Scene.DefaultWidth
+      self.scale = calculateScale(forFrame: self.frame)
     }
   }
 
@@ -31,7 +37,7 @@ class MonkView: NSView {
   }
   
   func sceneBounds() -> NSRect {
-    let scale = self.bounds.size.width / Scene.DefaultWidth
+    let scale = calculateScale(forFrame: self.bounds)
     let viewBounds = self.convertRect(self.bounds, fromView: self)
     return NSMakeRect(0, 0, viewBounds.size.width / scale, viewBounds.size.height / scale)
   }

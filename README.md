@@ -19,7 +19,12 @@ Because I can and I wanted to try to write one. Just to learn `ScreenSaver*`.
 
 ## Installation
 
-Open project, build and double click on Monk.saver in Finder.
+Open project, build `Monk` target and double click on `Monk.saver` bundle in Finder.
+
+## Debugging
+
+It's quite hard to debug screen saver. To avoid multiple Macs, remote debugging, ... hassle
+there's `Monk Demo` target, which runs same screen saver in window.
 
 ## Contact
 

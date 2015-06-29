@@ -14,11 +14,12 @@ import Cocoa
 /// Simple wrapper around `MonkView` in case you would like to test and
 /// debug it in application, because screen saver debugging is not so easy.
 ///
-public class MainView: ScreenSaverView, PreferencesWindowControllerDelegate {
+class MainView: ScreenSaverView {
   
-  // MARK: - Properties
+  // MARK: - Properties    
+  private var preferencesObserver: NSObjectProtocol?
   
-  var monkView: MonkView? {
+  private var monkView: MonkView? {
     didSet {
       oldValue?.removeFromSuperview()
       guard let newView = self.monkView else {
@@ -38,14 +39,32 @@ public class MainView: ScreenSaverView, PreferencesWindowControllerDelegate {
   
   // MARK: - Initialization
   
-  public override init?(frame: NSRect, isPreview: Bool) {
+  deinit {
+    if let observer = self.preferencesObserver {
+      NSNotificationCenter.defaultCenter().removeObserver(observer)
+    }
+  }
+  
+  override init?(frame: NSRect, isPreview: Bool) {
     super.init(frame: frame, isPreview:isPreview)
+    self.registerObserver()
     self.reloadScene()
   }
   
-  public required init?(coder: NSCoder) {
+  required init?(coder: NSCoder) {
     super.init(coder: coder)
+    self.registerObserver()
     self.reloadScene()
+  }
+  
+  private func registerObserver() {
+    if let observer = self.preferencesObserver {
+      NSNotificationCenter.defaultCenter().removeObserver(observer)
+    }
+    self.preferencesObserver = NSNotificationCenter.defaultCenter().addObserverForName(PreferencesDidChangeNotification,
+      object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { [weak self] (note) -> Void in
+        self?.reloadScene()
+    })
   }
   
   private func reloadScene() {
@@ -59,7 +78,7 @@ public class MainView: ScreenSaverView, PreferencesWindowControllerDelegate {
   
   // MARK: - Animation
     
-  public override func animateOneFrame() {
+  override func animateOneFrame() {
     guard let monkView = self.monkView else {
       return
     }
@@ -68,22 +87,11 @@ public class MainView: ScreenSaverView, PreferencesWindowControllerDelegate {
   
   // MARK: - Preferences
     
-  public override func hasConfigureSheet() -> Bool {
+  override func hasConfigureSheet() -> Bool {
     return true
   }
 
-  public override func configureSheet() -> NSWindow? {
-    self.preferencesWindowController.delegate = self
+  override func configureSheet() -> NSWindow? {
     return self.preferencesWindowController.window
-  }
-  
-  func preferencesWindowControllerDidDismiss(controller: PreferencesWindowController, update: Bool) {
-    controller.delegate = nil
-    
-    if update {
-      dispatch_async(dispatch_get_main_queue()) { [weak self] () -> Void in
-        self?.reloadScene()
-      }
-    }
   }
 }

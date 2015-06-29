@@ -14,6 +14,8 @@ import ScreenSaver
 // Images must be named "monk\(x)" where x is 0..<NumberOfMonkLogos
 let NumberOfMonkLogos = 4
 
+let ScreenSaverBundleIdentifier = "com.topmonks.apps.Monk"
+
 enum MonkType {
   case Single(index: Int)
   case Random
@@ -30,8 +32,11 @@ struct MonkSettings {
     return MonkSettings(type: .Random, count: 10, animationTimeInterval: 1.0 / 10.0, monkScale: 0.7)
   }
   
-  private static func moduleDefaults() -> ScreenSaverDefaults? {
-    return ScreenSaverDefaults(forModuleWithName: "com.topmonks.apps.Monk")
+  private static func moduleDefaults() -> NSUserDefaults? {
+    if NSBundle.mainBundle().bundleIdentifier == ScreenSaverBundleIdentifier {
+      return ScreenSaverDefaults(forModuleWithName: "com.topmonks.apps.Monk")      
+    }
+    return NSUserDefaults.standardUserDefaults()
   }
   
   static func load() -> MonkSettings {

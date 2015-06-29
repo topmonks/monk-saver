@@ -9,6 +9,8 @@
 import Cocoa
 import ScreenSaver
 
+let PreferencesDidChangeNotification = "PreferencesDidChangeNotification"
+
 ///
 /// Just for bindings
 ///
@@ -48,12 +50,7 @@ class PreferencesModel: NSObject {
   }
 }
 
-@objc protocol PreferencesWindowControllerDelegate {
-  func preferencesWindowControllerDidDismiss(controller: PreferencesWindowController, update: Bool)
-}
-
 class PreferencesWindowController: NSWindowController {
-  weak var delegate: PreferencesWindowControllerDelegate?
   dynamic var preferencesModel: PreferencesModel = PreferencesModel()
   
   override var windowNibName: String! {
@@ -62,12 +59,11 @@ class PreferencesWindowController: NSWindowController {
     
   @IBAction func ok(sender: AnyObject?) {
     self.preferencesModel.monkSettings().save()
+    NSNotificationCenter.defaultCenter().postNotificationName(PreferencesDidChangeNotification, object: nil)
     self.window?.sheetParent?.endSheet(self.window!)
-    self.delegate?.preferencesWindowControllerDidDismiss(self, update: true)
   }
 
   @IBAction func cancel(sender: AnyObject?) {
     self.window?.sheetParent?.endSheet(self.window!)
-    self.delegate?.preferencesWindowControllerDidDismiss(self, update: false)
   }
 }
